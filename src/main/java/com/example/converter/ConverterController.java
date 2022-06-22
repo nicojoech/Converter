@@ -16,4 +16,9 @@ public class ConverterController {
         return converter.toMeter(yd);
     }
 
+    @RequestMapping("/centimeter")
+    public double toCentimeter(@RequestParam double in){
+        return converter.toCentimeter(in);
+    }
+
 }

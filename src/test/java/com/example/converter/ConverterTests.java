@@ -23,4 +23,18 @@ public class ConverterTests {
         assertEquals(expectedResult, result);
     }
 
+    @Test
+    void centimeterTest() {
+        //Arrange
+        double a = 2;
+
+        double expectedResult = 2*2.54;
+
+        //Act
+        double result = converter.toCentimeter(a);
+
+        //Assert
+        assertEquals(expectedResult, result);
+    }
+
 }
