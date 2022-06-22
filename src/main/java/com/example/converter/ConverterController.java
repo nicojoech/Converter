@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class ConverterController {
 
+    Converter converter = new Converter();
+
     @RequestMapping("/meter")
     public double toMeter(@RequestParam double yd){
-        return yd / 1.094;
+        return converter.toMeter(yd);
     }
 
 }
